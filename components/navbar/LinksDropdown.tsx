@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinksNavbar = () => {
+const LinksDropdown = () => {
   return (
     <div>
       <h2>Links dropdown</h2>
@@ -8,4 +8,4 @@ const LinksNavbar = () => {
   );
 };
 
-export default LinksNavbar;
+export default LinksDropdown;

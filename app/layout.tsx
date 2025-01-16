@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar/Navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Rethink_Sans } from "next/font/google";
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={rethink.className}>
+        <Navbar />
         <main className="container py-10">{children}</main>
       </body>
     </html>
