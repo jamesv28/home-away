@@ -1,10 +1,17 @@
-import React from "react";
-
+import Link from "next/link";
+import { FaTent } from "react-icons/fa6";
+import { Button } from "../ui/button";
 const Logo = () => {
   return (
-    <div>
-      <h2>Logo</h2>
-    </div>
+    <Button
+      size="icon"
+      variant="outline"
+      className="bg-black flex flex-col justify-center items-center w-6 h-6"
+    >
+      <Link href="/" className=" text-white">
+        <FaTent />
+      </Link>
+    </Button>
   );
 };
 
