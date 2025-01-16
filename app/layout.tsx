@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Rethink_Sans } from "next/font/google";
 
-const plusSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const rethink = Rethink_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Home Away",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={plusSans.className}>
+      <body className={rethink.className}>
         <main className="container py-10">{children}</main>
       </body>
     </html>
